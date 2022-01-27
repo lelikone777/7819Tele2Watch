@@ -112,9 +112,9 @@
 
         .description {
             width: 85%;
-            margin: 16px auto 0;
+            margin: 10px auto 0;
             padding: 3px;
-            font-size: 10px;
+            font-size: 16px;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
@@ -123,28 +123,31 @@
         .btn {
             position: relative;
             width: 95%;
-            height: 180px;
+            /*height: 180px;*/
+            height: 29.3vmin;
             margin: 3px auto;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'PT Sans', sans-serif;
             line-height: 1;
-            background-color: rgba(98, 107, 217, 1);
+            filter: drop-shadow(0px 5px 10px rgba(10,12,38,0.75));
+            background-image: linear-gradient(0deg, #232b8c 0%, #777fd8 100%);
             border-radius: 30px;
         }
 
         .btn::after {
             content: '';
             position: absolute;
-            top: 9px;
-            left: 1px;
+            top: 0;
+            left: 0;
+            right: 0;
             width: 100%;
-            height: 180px;
+            height: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: rgba(73, 81, 163, 1);
+            background-color: #626bd9;
             border-radius: 30px;
             z-index: -1;
         }
@@ -156,26 +159,48 @@
         }
 
         .btn img {
-            height: 104px;
-            margin-left: 8px;
+            /*height: 104px;*/
+            height: 16.2vmin;
+            margin-right: 18px;
         }
 
         .btn .text1 {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 496px;
-            font-size: 80px;
+            /*width: 496px;*/
+            /*font-size: 80px;*/
+            width: auto;
+            font-size: 12.5vmin;
             font-weight: 700;
             text-transform: uppercase;
         }
 
         .btn .text2 {
-            font-size: 20px;
+            /*font-size: 20px;*/
             font-weight: 400;
             margin-left: -10px;
+
+            font-size: 3.1vmin;
+            display: block;
+            text-align: end;
+            margin-right: 1%;
         }
 
+        .btn {
+
+        }
+        .btn::after {
+        }
+        .btn .text1 {
+
+        }
+        .btn img {
+
+        }
+        .btn .text2 {
+
+        }
 
 
 
@@ -201,7 +226,7 @@
         /*--------------
              Media
         --------------*/
-        @media 
+        @media
         (orientation: portrait) and (max-width: 400px),
         (orientation: landscape) and (max-height: 500px) {
             footer, .description {
@@ -212,22 +237,6 @@
         }
 
 
-            .btn {
-                height: 29.3vmin;
-            }
-            .btn::after {
-                height: 29.3vmin;
-            }
-            .btn .text1 {
-                width: auto;
-                font-size: 12.5vmin;
-            }
-            .btn img {
-                height: 16.2vmin;
-            }
-            .btn .text2 {
-                font-size: 3vmin;
-            }
 
         /*@media*/
         /*(min-height: 640px),*/
@@ -275,11 +284,11 @@
             <a href="#" class="btn" onclick="document.getElementById('ButtonSubmit').click();">
                 <div class="text">
                     <div class="text1">
-                        <span>Смотреть</span>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAMAAABjot39AAAAAXNSR0IB2cksfwAAAPBQTFRFAAAA/////////////////////////////Pz8/////////v7+/////v7+/Pz8/////////////////v7+/v7+////////////////////////+vr6/////////////////////////////////////////v7+/////////////////////////////////////////////////////////f39/////////////////////////////////////////Pz8/////////v7+/////////////////////////////////////f39////////T61QHgAAAFB0Uk5TAP+/f0yyQBk45RByaKMlVeL2CTtRAxPN0sVbIZ+Jq7AsmrrewtdhlBx17YuXa4OmjfDo/Op6vSms3G8WyHzzMzEMt1lkH9TaTvmQR4VKRFjfR6mKAAAFpUlEQVR4nK2a6ULiMBCAM1AOQRRUzkXlUkDwRFFcb12vdXff/222k1SgkGSmlPlRSpvp10ySmUlSIbiy5qTrkeJe9nSQO2+Wyldf+8kCW5klyfQT6GTUXu8sh5Dfqma1CE/KF5ehGZu9NxtCSewllO2c2PhJd43q0aqTrP1K5Td+rt3HK9327qSO2YtUeMbwdlNb4vLw6tQrsnedX4SxuevpR9JrlmKFSuZAlSs+B2YkTpTqSvSeLFuoeJXeSQaDHDY9RoJX3jPuYDtA83SOpc4HlyE5EWW2P1yF9z2psBuw/lFlti9eL1Cls6vBGK7EVXVadEsKkZFFj38EhojvF1yJkwVvsFwuvQhDjKtDYWTfL+nHIEuiDIz0Ga0AXcuEsRl8Bws8hWG4co0POTX7zx7ej4aECPFXvuuG4a6sazs0RIgt6W70995lD14CRIg0Pmpbd6eDI/5m4TDhlzpiXjQ30HflQnRhn2y08Gnz/fkQ6YsOxnl5OEPXOdsDEs2lNYqSf/jWtzMXMWhlLUMp4awGzImwx57605tNJFu8sLTnbi0IJYW9qeq7hDF+16yxrkLHeaBosIoqztQFByOjJWidfCczmSABYegqxKb+xwjPEvmmQLPCp7z7K4NVWbE54gkFoM/Pu2K+ylBV8VGgtMWlONOV2aSq4qcA9LgYfP2Md94j/f0MBW6Y6Q1W5uxRnuYxq7fnHbMUdhTCLEIZGKNBxF54ngINVtjGuNmXZ1XaTWoovDwn4WYrI3m24qrYsnoDxeosxtIGldDE3d8WUVZPgXO6T1dAeWb0ndrgSVMm3dQoa9iE3hP+LkqB5gOh6mZ4H+6PW/SOeiMzhbTDlWyY7yotTIGSNSPpAvZgHJ5VWzGSYg1/8vnHMnU6Ckmx9VG01ZuoE+/CogD8NuoO3LvyAY6xCJtitvorUorugfSwDArkDMsxDaRgplFbBsXkp3G2IudFv5ZDgXWdLjpjgesoZArOpNzodD+Rgl2AzBeYlDOd7hFScu7BNG0KSmnqdDHei3P38HNJlEOdbh8pmOsTMYxLedW+La5SiBJQqQWXYshuMVsSZaCXGjiUA625PF3p/8ncl6Y8PZh0cVImvtxDNzRldtI1kRRglNx3j58hKWWLyZOA2R4eDQsAXErPNt6wFiei4B5LYSiv9nQJJ1jPQoyAdpcWSp0Y0tiHOyr7060ysCgr+4TmI9ZWqJkp1TAmyhW5kfBbNosQHff3gNgN0FM4+ThmrjLsoOWIcamlDDlTpZJqFiEugMx3dRQyvULBuZHKKS9pk81TmGvg6JA9zxIjTTZHafPW0X5gjKyp8xfwrzGQlBF3DwTbvuydFzCPsWZ+fkqGzHk8SeA0b5w/XVCVmaYYA8m8YFWaY98gF5lslZmixB7YEFmVqaiCE2bbZLz9zRhcsBlCbLsKpSl/nS+CdaHAWx+DFr0bMZH5lb1nvGJ5RF1CeoG28XBlb+i/tEPYbBtGMXIC4hMMX7PTmuTAbrPAUsOmr89e3SZsFlTQoZzPpZOpImGzYHI01/RK/sASbSY7ZV9352t5GAkpP+pu5XEHAK6XAMFYAneGnYl77BbkmgxD5OAy5h1xeZu9xGqQjnyKxRUpTLj9kSSQ7aswdXIKaJZ1GuLGUPntQethUYgcJ/CPKlaQ36SckeW0UlPb/Np5v182dlSdF9iH25ed9I4BEZ5Lg72gW+/ehxpl7g7eS06WH74HYCTUu0FfO+K1Ei96QZ4bUhJRaayAu00bt6cBOD88BtTJlYMZuax6sf7mmljR38ooA8PQvOBnlvGnPQftiukdU0605JUqBf9QY4YDkL3qOn5UKrn/WRzfb3ZD+AsncwYTGbw2dqqfR71+JhaZvg7lKLlgZJfHrf4IrNLo1sIhPInfNj70hLd6hZua80jpY//3aneRk2fuHul/i0BaIbFIdSYAAAAASUVORK5CYII=" alt="Play">
+                        <span>Смотреть</span>
                     </div>
                     <span class="text2">
-                         Три дня бесплатно, далее 20 руб./день
+                         Первые 3 дня бесплатно, далее 20 руб./сут.
                     </span>
                 </div>
 
