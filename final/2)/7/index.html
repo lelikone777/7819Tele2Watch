@@ -123,41 +123,44 @@
         .btn {
             position: relative;
             width: 95%;
-            /*height: 200px;*/
-            height: 31.25vmin;
+            /*height: 180px;*/
+            height: 29.3vmin;
             margin: 3px auto;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'PT Sans', sans-serif;
-            line-height: 1;
-            background-image: linear-gradient(0deg, #bf0000 0%, #777fd8 100%);
-            border: 1px solid #777fd8;
-            border-radius: 30px;
+            line-height: 0.8;
+            filter: drop-shadow(0px 5px 10px rgba(10,12,38,0.75));
+            background-color: #c357d9;
         }
 
         .btn .text {
             /*width: 190px;*/
             /*transform: translateY(-3px);*/
+            position: relative;
+            width: 95%;
+            height: 50%;
             display: flex;
             justify-content: center;
-            height: 90%;
-            width: 100%;
             color: #FFFFFF;
             align-items: center;
         }
 
         .btn .wrap {
-            display: none;
             height: 100%;
-            width: 25%;
+            width: 8%;
+            display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: baseline;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
 
         .img {
-            height: 13.1vmin;
-            width: 13.1vmin;
+            height: 7.2vmin;
+            width: 7.2vmin;
         }
 
         .img img {
@@ -169,30 +172,26 @@
         }
 
         .btn .text1 {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100%;
             justify-content: center;
-            width: 80%;
-
-
+            height: 100%;
+            width: 100%;
+            font-size: 14.1vmin;
+            font-weight: 700;
+            text-transform: uppercase;
             /*width: 496px;*/
             /*font-size: 80px;*/
-        }
-
-        .btn .text-title {
-            text-transform: uppercase;
-            font-size: 15.6vmin;
-            font-weight: 700;
         }
 
         .btn .text2 {
             /*font-size: 20px;*/
             font-size: 3.1vmin;
             font-weight: 400;
-            padding: 4px 40px;
-            border: 1px solid #FFFFFF;
+            text-transform: initial;
+            margin-top: 16px;
         }
 
 
@@ -238,7 +237,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAAXNSR0IB2cksfwAAAPZQTFRFAAAA/////////////////////f39/////////////////////v7+/////////////////////////////////v7+/////////////////////////////v7+/v7++/v7/v7+/v7+/////////////////////////////////////////////////////////v7+/v7+/////////////////////////////////////////////////////////////////////////////v7+/////v7+/////////f39////////////////////////////NcQtCQAAAFJ0Uk5TAP9A2t5/JEVMD76RKuiyCppmuEiMLaYSzGzCUc95Mjn0We2gAolWquZxrXN3otEaYbTUXQj2/cXXbh22X3vwdMqUNfiwgx/kh5cinmQ7BekWU32hLpYAAARlSURBVHicpZjXYuIwEEUl6tJCQoeQAoGQSnoBQsqS3vP/P7PSSHZcZmSbnQdjrKtjyZauRmbMHL30yU1lvzQs8EK7tPG83YkFVDBGcbl2zr1RyM3JzGy+rftoKhKVdGRc/qVL0FTEp5kouHHf1biv9tFicnEydN0jPuqF7uzKll2tnVx7/LRLiqlY7skuu70Kx2teWjUu9qpIeawftwTZ5WBctaTF3eRfUlRetJAvQbyTghKe51JG3dq+1QuzrqJlG3TrrIgNlHTd1G3d3YVww6y8oORJUqG7WwmFk3GnKuwQxfrlNUPzGFtRVXJoYQ7KEq8ReOJJzqDWH6SoAyW1SDgZql/+AfsB1xcj8xhLwET0Tu1HuFFjDh6ro107gqvf8wBZGuo+u6414Vp5Lh5je1B7zXElA34wRbSx5k8+mDjwdhqG0wKi3JUDqRMIfH1yd3AM/ofNNzV37gLdGTp9ZP/tgx8gulXtFY2gp1s8lrJN/S8v/f4c85eYZXv8IYC4JEUt/eeFnI6/QJ5dwwS/0ZKiJTitX4vTLuqTDiA/2zYCN6WmBKeHtKc5gcKljANoIiXQrIF3VFJAvnVoAG5LxY04KZ6JkzYu8gCFeRyQwBQ8aXFy4p+INJAf0ytIVpaPGbuXv6thgWKBOCWAclbxEevJ/OqS0GBAfkFkXweysKW8hxq2KJCfr+BqGIrqEVKDFgeKWYs+IrAYdiOPjxGBvLuEqK8ACLnCJ1JsBHK+728EPD0mc5QvgmcCIjaZB6DMPohhbQb6/SQDwCF3OmMkIB945NIGwZPJ1TgAaDuqDrkUM3mdTJ+CgB5Hy/53Cz0uDy1si8NkTqB3GZK+BW95OBdw692jhpyEbYhDdx6g37+rAHyWx2Jk4GzXry4DEJybyuRJYPYDUb8DsCOP1P6SAuJ2lwQg1MFzZArYxhJgEUMAwkB8igK8q+Ni8IaaztWJPiPAxAlxc5UwLetK/bDAGr1JuBXFZ3IFk0l3PBzw2rCHgUztTZ6BZ+P5mgc4IVZbCHjHYD/g3Lg/uIH0nk5EryEUXZWZwo4CXficwAvzjhLS/n11PnWck8AKNT1VqBRWD9BMnBo5NvDyx4jTeYid9o/kP+8C4QS+0UmXinrC0UDxQG+JF30qk1tewFZ1d0xdDdRrPrZPORR3vg/e+aS2XA1kOre7Q6TFalBv7equBi3DoyKyqsCocW8D9daC9EVzwL7JZ4EX8uJsHp7a3Za8l1Pw+YwwCWMAL+FPlNVjTBDuSUZVjVRsJCRVUbRvjR2OvBArdlThXgTeg6oyIor1N7dB2E83qXtVgd5gXSnB057ZWlTUp/q7pcl2LTc4Dpy+xd2EkjbGRl31ViNbmyZZr3msdRtUwm/F973lgZNtKkP5SDYsUZgveUu2mmd3/daw2h/a5QtEDmFA8tbKVTqv1p56tfyevOSRcV6kjPV4Nn7mvhQFB8gSN8R1LSJORuomi9NmO4eRvts7Yjxq+XA7HWoHDvEPuVJID0xVvBYAAAAASUVORK5CYII=" alt="Wink" class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODciIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCA4NyAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMjYuNTAyNCA0Ljc0MTgxSDMwLjEyODhMMzMuMDI0OCAxNi4yNzQ2QzMzLjAyNDggMTYuMjc0NiAzMy4zMzg5IDE3LjYwNTEgMzMuNDY5MSAxOC4yNTg5QzMzLjU5OTQgMTcuNjA3NyAzMy45MTM1IDE2LjI0OTEgMzMuOTEzNSAxNi4yNDkxTDM2Ljg4ODYgNC43NDE4MUg0MC40MzgzTDQzLjQxMzUgMTYuMjQ5MUM0My40MTM1IDE2LjI0OTEgNDMuNzI3NiAxNy42MDUxIDQzLjg1NzggMTguMjU4OUM0My45ODgxIDE3LjYwNzcgNDQuMzAyMiAxNi4yNzQ2IDQ0LjMwMjIgMTYuMjc0Nkw0Ny4xOTgyIDQuNzQxODFINTAuODI0NUw0NS43ODg1IDIzLjAwNjNINDIuMDgzTDM4LjY2NiA5Ljc1MjI5TDM1LjI0OTEgMjMuMDA2M0gzMS41NDM2TDI2LjUwMjQgNC43NDE4MVoiIGZpbGw9ImJsYWNrIi8+CiAgPHBhdGggZD0iTTU2LjIwNTcgMTAuMDYzOUg1Mi45MTlWMjMuMDA2NEg1Ni4yMDU3VjEwLjA2MzlaIiBmaWxsPSJibGFjayIvPgogIDxwYXRoIGQ9Ik02OC40MzQ5IDIzLjAwNjNWMTUuNTQ0MkM2OC40MzQ5IDEzLjg0ODUgNjcuNjI1MyAxMi43Nzg1IDY1Ljc5OTQgMTIuNzc4NUM2NC4wNzgyIDEyLjc3ODUgNjIuNzk4NyAxNC4yNjQ4IDYyLjc5ODcgMTYuNDMwNFYyMy4wMDYzSDU5LjUxMlYxMC4wNjM5SDYyLjc5ODdWMTIuMTUwM0M2My43NjQgMTAuNjY0IDY1LjMwNCA5LjY5ODY3IDY3LjE4MSA5LjY5ODY3QzY5Ljk0NjcgOS42OTg2NyA3MS43MjE2IDExLjQ5OTEgNzEuNzIxNiAxNC4xODU2VjIzLjAwMzhINjguNDM0OVYyMy4wMDYzWiIgZmlsbD0iYmxhY2siLz4KICA8cGF0aCBkPSJNNzQuNjc0MyA0Ljc0MTgxSDc3Ljk2MDlWMTMuOTc4OEw4MS45MDE0IDEwLjA2MzlIODUuOTcyMUw4MS4yNTAyIDE0LjY4MTFMODYuNjAwMyAyMy4wMDM4SDgyLjgxNTdMNzguOTU0NCAxNi45NTE0TDc3Ljk2MzUgMTcuOTE2N1YyMy4wMDM4SDc0LjY3NjhWNC43NDE4MUg3NC42NzQzWiIgZmlsbD0iYmxhY2siLz4KICA8cGF0aCBkPSJNNTIuNDgyMSAzLjQwNjIyTDUzLjc2NjYgNC42OTA3Nkw1Mi40ODIxIDUuOTc1M0w1NC4wMDE2IDcuNDkyMjRMNTYuODAzMSA0LjY5MDc2TDU0LjAwMTYgMS44ODkyOEw1Mi40ODIxIDMuNDA2MjJaIiBmaWxsPSJibGFjayIvPgogIDxwYXRoIGQ9Ik03Ljc2NTY3IDAuNDI4NTg5TDAuNDI4NzExIDcuNzY1NTVMNi42MzY5IDEzLjk3MzdMMC40Mjg3MTEgMjAuMTg0NUw3Ljc2NTY3IDI3LjUyMTVMMjEuMzEzNCAxMy45NzM3TDcuNzY1NjcgMC40Mjg1ODlaIiBmaWxsPSIjRkY0RjEyIi8+Cjwvc3ZnPgo=" alt="Wink" class="logo">
         <div class="title">Amediateka</div>
         <div class="age">18+</div>
         </div>
@@ -248,12 +247,12 @@
         <a href="#" class="btn" onclick="document.getElementById('ButtonSubmit').click();">
             <div class="text">
                 <div class="text1">
-                    <span class="text-title">Смотреть</span>
+                    <span>Смотреть</span>
                     <span class="text2">Первые 3 дня бесплатно, далее 20 руб./сут.</span>
-                </div>
-                <div class="wrap">
-                    <div class="img">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAMAAABjot39AAAAAXNSR0IB2cksfwAAAPBQTFRFAAAA/////////////////////////////Pz8/////////v7+/////v7+/Pz8/////////////////v7+/v7+////////////////////////+vr6/////////////////////////////////////////v7+/////////////////////////////////////////////////////////f39/////////////////////////////////////////Pz8/////////v7+/////////////////////////////////////f39////////T61QHgAAAFB0Uk5TAP+/f0yyQBk45RByaKMlVeL2CTtRAxPN0sVbIZ+Jq7AsmrrewtdhlBx17YuXa4OmjfDo/Op6vSms3G8WyHzzMzEMt1lkH9TaTvmQR4VKRFjfR6mKAAAFpUlEQVR4nK2a6ULiMBCAM1AOQRRUzkXlUkDwRFFcb12vdXff/222k1SgkGSmlPlRSpvp10ySmUlSIbiy5qTrkeJe9nSQO2+Wyldf+8kCW5klyfQT6GTUXu8sh5Dfqma1CE/KF5ehGZu9NxtCSewllO2c2PhJd43q0aqTrP1K5Td+rt3HK9327qSO2YtUeMbwdlNb4vLw6tQrsnedX4SxuevpR9JrlmKFSuZAlSs+B2YkTpTqSvSeLFuoeJXeSQaDHDY9RoJX3jPuYDtA83SOpc4HlyE5EWW2P1yF9z2psBuw/lFlti9eL1Cls6vBGK7EVXVadEsKkZFFj38EhojvF1yJkwVvsFwuvQhDjKtDYWTfL+nHIEuiDIz0Ga0AXcuEsRl8Bws8hWG4co0POTX7zx7ej4aECPFXvuuG4a6sazs0RIgt6W70995lD14CRIg0Pmpbd6eDI/5m4TDhlzpiXjQ30HflQnRhn2y08Gnz/fkQ6YsOxnl5OEPXOdsDEs2lNYqSf/jWtzMXMWhlLUMp4awGzImwx57605tNJFu8sLTnbi0IJYW9qeq7hDF+16yxrkLHeaBosIoqztQFByOjJWidfCczmSABYegqxKb+xwjPEvmmQLPCp7z7K4NVWbE54gkFoM/Pu2K+ylBV8VGgtMWlONOV2aSq4qcA9LgYfP2Md94j/f0MBW6Y6Q1W5uxRnuYxq7fnHbMUdhTCLEIZGKNBxF54ngINVtjGuNmXZ1XaTWoovDwn4WYrI3m24qrYsnoDxeosxtIGldDE3d8WUVZPgXO6T1dAeWb0ndrgSVMm3dQoa9iE3hP+LkqB5gOh6mZ4H+6PW/SOeiMzhbTDlWyY7yotTIGSNSPpAvZgHJ5VWzGSYg1/8vnHMnU6Ckmx9VG01ZuoE+/CogD8NuoO3LvyAY6xCJtitvorUorugfSwDArkDMsxDaRgplFbBsXkp3G2IudFv5ZDgXWdLjpjgesoZArOpNzodD+Rgl2AzBeYlDOd7hFScu7BNG0KSmnqdDHei3P38HNJlEOdbh8pmOsTMYxLedW+La5SiBJQqQWXYshuMVsSZaCXGjiUA625PF3p/8ncl6Y8PZh0cVImvtxDNzRldtI1kRRglNx3j58hKWWLyZOA2R4eDQsAXErPNt6wFiei4B5LYSiv9nQJJ1jPQoyAdpcWSp0Y0tiHOyr7060ysCgr+4TmI9ZWqJkp1TAmyhW5kfBbNosQHff3gNgN0FM4+ThmrjLsoOWIcamlDDlTpZJqFiEugMx3dRQyvULBuZHKKS9pk81TmGvg6JA9zxIjTTZHafPW0X5gjKyp8xfwrzGQlBF3DwTbvuydFzCPsWZ+fkqGzHk8SeA0b5w/XVCVmaYYA8m8YFWaY98gF5lslZmixB7YEFmVqaiCE2bbZLz9zRhcsBlCbLsKpSl/nS+CdaHAWx+DFr0bMZH5lb1nvGJ5RF1CeoG28XBlb+i/tEPYbBtGMXIC4hMMX7PTmuTAbrPAUsOmr89e3SZsFlTQoZzPpZOpImGzYHI01/RK/sASbSY7ZV9352t5GAkpP+pu5XEHAK6XAMFYAneGnYl77BbkmgxD5OAy5h1xeZu9xGqQjnyKxRUpTLj9kSSQ7aswdXIKaJZ1GuLGUPntQethUYgcJ/CPKlaQ36SckeW0UlPb/Np5v182dlSdF9iH25ed9I4BEZ5Lg72gW+/ehxpl7g7eS06WH74HYCTUu0FfO+K1Ei96QZ4bUhJRaayAu00bt6cBOD88BtTJlYMZuax6sf7mmljR38ooA8PQvOBnlvGnPQftiukdU0605JUqBf9QY4YDkL3qOn5UKrn/WRzfb3ZD+AsncwYTGbw2dqqfR71+JhaZvg7lKLlgZJfHrf4IrNLo1sIhPInfNj70hLd6hZua80jpY//3aneRk2fuHul/i0BaIbFIdSYAAAAASUVORK5CYII=" alt="Play">
+                    <div class="wrap">
+                        <div class="img">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqBAMAAAA37dRoAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA////w1fZ/////vv+4Kfr6cLx////////////////////////////////OMI1jwAAAA90Uk5TAP///v///wH7kOuY8pWdnsOj3wAAAIdJREFUeJzFzLENgzAQheFbwR0SEkWkS4/SUkVKeka4MVAqRmCEiEkYgYoRskYqmzP+e7/y068n0/q4bjhkCeVa+YI20oOGSvpCfY6oinobURXVxV4V9YwzVdQU56qoMb6okd7xwUhjmquRpjRTIz1Tr0bqUqdG+g6koaJugI3soJ185jL9/QHtMlO6trgGpgAAAABJRU5ErkJggg==" alt="Play">
+                        </div>
                     </div>
                 </div>
             </div>

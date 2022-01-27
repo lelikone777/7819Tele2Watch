@@ -228,6 +228,27 @@
             }
         }
 
+        /*@media*/
+        /*(min-height: 640px) {*/
+        /*    .btn {*/
+        /*        max-height: 200px;*/
+        /*    }*/
+        /*    .btn::after {*/
+        /*        max-height: 180px;*/
+        /*    }*/
+        /*    .btn .text1 {*/
+        /*        width: auto;*/
+        /*        font-size: 80px;*/
+        /*    }*/
+        /*    .img {*/
+        /*        width: 84px;*/
+        /*        height: 84px;*/
+        /*    }*/
+        /*    .btn .text2 {*/
+        /*        font-size: 20px;*/
+        /*    }*/
+        /*}*/
+
         @supports (-webkit-touch-callout: none) {
             .text {
                 letter-spacing: -1px;
@@ -238,7 +259,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAAXNSR0IB2cksfwAAAPZQTFRFAAAA/////////////////////f39/////////////////////v7+/////////////////////////////////v7+/////////////////////////////v7+/v7++/v7/v7+/v7+/////////////////////////////////////////////////////////v7+/v7+/////////////////////////////////////////////////////////////////////////////v7+/////v7+/////////f39////////////////////////////NcQtCQAAAFJ0Uk5TAP9A2t5/JEVMD76RKuiyCppmuEiMLaYSzGzCUc95Mjn0We2gAolWquZxrXN3otEaYbTUXQj2/cXXbh22X3vwdMqUNfiwgx/kh5cinmQ7BekWU32hLpYAAARlSURBVHicpZjXYuIwEEUl6tJCQoeQAoGQSnoBQsqS3vP/P7PSSHZcZmSbnQdjrKtjyZauRmbMHL30yU1lvzQs8EK7tPG83YkFVDBGcbl2zr1RyM3JzGy+rftoKhKVdGRc/qVL0FTEp5kouHHf1biv9tFicnEydN0jPuqF7uzKll2tnVx7/LRLiqlY7skuu70Kx2teWjUu9qpIeawftwTZ5WBctaTF3eRfUlRetJAvQbyTghKe51JG3dq+1QuzrqJlG3TrrIgNlHTd1G3d3YVww6y8oORJUqG7WwmFk3GnKuwQxfrlNUPzGFtRVXJoYQ7KEq8ReOJJzqDWH6SoAyW1SDgZql/+AfsB1xcj8xhLwET0Tu1HuFFjDh6ro107gqvf8wBZGuo+u6414Vp5Lh5je1B7zXElA34wRbSx5k8+mDjwdhqG0wKi3JUDqRMIfH1yd3AM/ofNNzV37gLdGTp9ZP/tgx8gulXtFY2gp1s8lrJN/S8v/f4c85eYZXv8IYC4JEUt/eeFnI6/QJ5dwwS/0ZKiJTitX4vTLuqTDiA/2zYCN6WmBKeHtKc5gcKljANoIiXQrIF3VFJAvnVoAG5LxY04KZ6JkzYu8gCFeRyQwBQ8aXFy4p+INJAf0ytIVpaPGbuXv6thgWKBOCWAclbxEevJ/OqS0GBAfkFkXweysKW8hxq2KJCfr+BqGIrqEVKDFgeKWYs+IrAYdiOPjxGBvLuEqK8ACLnCJ1JsBHK+728EPD0mc5QvgmcCIjaZB6DMPohhbQb6/SQDwCF3OmMkIB945NIGwZPJ1TgAaDuqDrkUM3mdTJ+CgB5Hy/53Cz0uDy1si8NkTqB3GZK+BW95OBdw692jhpyEbYhDdx6g37+rAHyWx2Jk4GzXry4DEJybyuRJYPYDUb8DsCOP1P6SAuJ2lwQg1MFzZArYxhJgEUMAwkB8igK8q+Ni8IaaztWJPiPAxAlxc5UwLetK/bDAGr1JuBXFZ3IFk0l3PBzw2rCHgUztTZ6BZ+P5mgc4IVZbCHjHYD/g3Lg/uIH0nk5EryEUXZWZwo4CXficwAvzjhLS/n11PnWck8AKNT1VqBRWD9BMnBo5NvDyx4jTeYid9o/kP+8C4QS+0UmXinrC0UDxQG+JF30qk1tewFZ1d0xdDdRrPrZPORR3vg/e+aS2XA1kOre7Q6TFalBv7equBi3DoyKyqsCocW8D9daC9EVzwL7JZ4EX8uJsHp7a3Za8l1Pw+YwwCWMAL+FPlNVjTBDuSUZVjVRsJCRVUbRvjR2OvBArdlThXgTeg6oyIor1N7dB2E83qXtVgd5gXSnB057ZWlTUp/q7pcl2LTc4Dpy+xd2EkjbGRl31ViNbmyZZr3msdRtUwm/F973lgZNtKkP5SDYsUZgveUu2mmd3/daw2h/a5QtEDmFA8tbKVTqv1p56tfyevOSRcV6kjPV4Nn7mvhQFB8gSN8R1LSJORuomi9NmO4eRvts7Yjxq+XA7HWoHDvEPuVJID0xVvBYAAAAASUVORK5CYII=" alt="Wink" class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODciIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCA4NyAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMjYuNTAyNCA0Ljc0MTgxSDMwLjEyODhMMzMuMDI0OCAxNi4yNzQ2QzMzLjAyNDggMTYuMjc0NiAzMy4zMzg5IDE3LjYwNTEgMzMuNDY5MSAxOC4yNTg5QzMzLjU5OTQgMTcuNjA3NyAzMy45MTM1IDE2LjI0OTEgMzMuOTEzNSAxNi4yNDkxTDM2Ljg4ODYgNC43NDE4MUg0MC40MzgzTDQzLjQxMzUgMTYuMjQ5MUM0My40MTM1IDE2LjI0OTEgNDMuNzI3NiAxNy42MDUxIDQzLjg1NzggMTguMjU4OUM0My45ODgxIDE3LjYwNzcgNDQuMzAyMiAxNi4yNzQ2IDQ0LjMwMjIgMTYuMjc0Nkw0Ny4xOTgyIDQuNzQxODFINTAuODI0NUw0NS43ODg1IDIzLjAwNjNINDIuMDgzTDM4LjY2NiA5Ljc1MjI5TDM1LjI0OTEgMjMuMDA2M0gzMS41NDM2TDI2LjUwMjQgNC43NDE4MVoiIGZpbGw9ImJsYWNrIi8+CiAgPHBhdGggZD0iTTU2LjIwNTcgMTAuMDYzOUg1Mi45MTlWMjMuMDA2NEg1Ni4yMDU3VjEwLjA2MzlaIiBmaWxsPSJibGFjayIvPgogIDxwYXRoIGQ9Ik02OC40MzQ5IDIzLjAwNjNWMTUuNTQ0MkM2OC40MzQ5IDEzLjg0ODUgNjcuNjI1MyAxMi43Nzg1IDY1Ljc5OTQgMTIuNzc4NUM2NC4wNzgyIDEyLjc3ODUgNjIuNzk4NyAxNC4yNjQ4IDYyLjc5ODcgMTYuNDMwNFYyMy4wMDYzSDU5LjUxMlYxMC4wNjM5SDYyLjc5ODdWMTIuMTUwM0M2My43NjQgMTAuNjY0IDY1LjMwNCA5LjY5ODY3IDY3LjE4MSA5LjY5ODY3QzY5Ljk0NjcgOS42OTg2NyA3MS43MjE2IDExLjQ5OTEgNzEuNzIxNiAxNC4xODU2VjIzLjAwMzhINjguNDM0OVYyMy4wMDYzWiIgZmlsbD0iYmxhY2siLz4KICA8cGF0aCBkPSJNNzQuNjc0MyA0Ljc0MTgxSDc3Ljk2MDlWMTMuOTc4OEw4MS45MDE0IDEwLjA2MzlIODUuOTcyMUw4MS4yNTAyIDE0LjY4MTFMODYuNjAwMyAyMy4wMDM4SDgyLjgxNTdMNzguOTU0NCAxNi45NTE0TDc3Ljk2MzUgMTcuOTE2N1YyMy4wMDM4SDc0LjY3NjhWNC43NDE4MUg3NC42NzQzWiIgZmlsbD0iYmxhY2siLz4KICA8cGF0aCBkPSJNNTIuNDgyMSAzLjQwNjIyTDUzLjc2NjYgNC42OTA3Nkw1Mi40ODIxIDUuOTc1M0w1NC4wMDE2IDcuNDkyMjRMNTYuODAzMSA0LjY5MDc2TDU0LjAwMTYgMS44ODkyOEw1Mi40ODIxIDMuNDA2MjJaIiBmaWxsPSJibGFjayIvPgogIDxwYXRoIGQ9Ik03Ljc2NTY3IDAuNDI4NTg5TDAuNDI4NzExIDcuNzY1NTVMNi42MzY5IDEzLjk3MzdMMC40Mjg3MTEgMjAuMTg0NUw3Ljc2NTY3IDI3LjUyMTVMMjEuMzEzNCAxMy45NzM3TDcuNzY1NjcgMC40Mjg1ODlaIiBmaWxsPSIjRkY0RjEyIi8+Cjwvc3ZnPgo=" alt="Wink" class="logo">
         <div class="title">Amediateka</div>
         <div class="age">18+</div>
         </div>
