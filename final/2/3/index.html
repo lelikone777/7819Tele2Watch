@@ -179,6 +179,7 @@
             text-transform: uppercase;
             padding-right: 19px;
             border-right: 1px solid #FFFFFF;
+            flex: 1;
         }
 
         .btn span {
@@ -214,6 +215,29 @@
         /*--------------
              Media
         --------------*/
+
+        @media
+        (min-height: 667px) and (min-width: 590px)
+        {
+            .btn {
+                max-height: 180px;
+            }
+            .btn::after {
+                max-height: 180px;
+            }
+            .btn .text1 {
+                width: auto;
+                font-size: 80px;
+            }
+            .btn .img {
+                height: 104px;
+                width: 104px;
+            }
+            .btn .text2 {
+                font-size: 20px;
+            }
+        }
+
         @media 
         (orientation: portrait) and (max-width: 400px),
         (orientation: landscape) and (max-height: 500px) {

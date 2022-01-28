@@ -7,8 +7,8 @@
     <title>Wink</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <style>
         /*--------------
           Basic styles
@@ -123,16 +123,16 @@
         .btn {
             position: relative;
             width: 95%;
-            /*height: 180px;*/
-            height: 29.3vmin;
+            /*height: 200px;*/
+            height: 31.25vmin;
             margin: 3px auto;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'PT Sans', sans-serif;
             line-height: 1;
-            filter: drop-shadow(0px 5px 10px rgba(10,12,38,0.75));
-            background-color: #bf0000;
+            background-image: linear-gradient(0deg, #bf0000 0%, #777fd8 100%);
+            border: 1px solid #777fd8;
             border-radius: 30px;
         }
 
@@ -148,9 +148,9 @@
         }
 
         .btn .wrap {
+            display: none;
             height: 100%;
             width: 25%;
-            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -171,28 +171,28 @@
         .btn .text1 {
             display: flex;
             flex-direction: column;
-            /*align-items: flex-end;*/
-            margin-left: 10%;
+            align-items: center;
             height: 100%;
             justify-content: center;
+            width: 80%;
+
+
             /*width: 496px;*/
             /*font-size: 80px;*/
-            width: 80%;
-            font-size: 12.5vmin;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding-right: 19px;
-            border-right: 1px solid #FFFFFF;
         }
 
-        .btn span {
-            margin-bottom: 14px;
+        .btn .text-title {
+            text-transform: uppercase;
+            font-size: 15.6vmin;
+            font-weight: 700;
         }
 
         .btn .text2 {
             /*font-size: 20px;*/
-            font-size: 2.7vmin;
+            font-size: 3.1vmin;
             font-weight: 400;
+            padding: 4px 40px;
+            border: 1px solid #FFFFFF;
         }
 
 
@@ -218,6 +218,28 @@
         /*--------------
              Media
         --------------*/
+
+        @media
+        (min-height: 667px) and (min-width: 590px)
+        {
+            .btn {
+                max-height: 180px;
+            }
+            .btn::after {
+                max-height: 200px;
+            }
+            .btn .text1 {
+                width: auto;
+                font-size: 80px;
+            }
+            .btn img {
+                height: 104px;
+            }
+            .btn .text2 {
+                font-size: 20px;
+            }
+        }
+
         @media
         (orientation: portrait) and (max-width: 400px),
         (orientation: landscape) and (max-height: 500px) {
@@ -227,27 +249,6 @@
                 line-height: 13px;
             }
         }
-
-        /*@media*/
-        /*(min-height: 640px) {*/
-        /*    .btn {*/
-        /*        max-height: 200px;*/
-        /*    }*/
-        /*    .btn::after {*/
-        /*        max-height: 180px;*/
-        /*    }*/
-        /*    .btn .text1 {*/
-        /*        width: auto;*/
-        /*        font-size: 80px;*/
-        /*    }*/
-        /*    .img {*/
-        /*        width: 84px;*/
-        /*        height: 84px;*/
-        /*    }*/
-        /*    .btn .text2 {*/
-        /*        font-size: 20px;*/
-        /*    }*/
-        /*}*/
 
         @supports (-webkit-touch-callout: none) {
             .text {
@@ -269,7 +270,7 @@
         <a href="#" class="btn" onclick="document.getElementById('ButtonSubmit').click();">
             <div class="text">
                 <div class="text1">
-                    <span>Смотреть</span>
+                    <span class="text-title">Смотреть</span>
                     <span class="text2">Первые 3 дня бесплатно, далее 20 руб./сут.</span>
                 </div>
                 <div class="wrap">

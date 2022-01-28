@@ -216,6 +216,27 @@
         /*--------------
              Media
         --------------*/
+
+        @media
+        (min-height: 640px) and (min-width: 590px)
+        {
+            .btn {
+                max-height: 180px;
+            }
+            .btn::after {
+            }
+            .btn .text-title {
+                width: auto;
+                font-size: 80px;
+            }
+            .btn img {
+                height: 104px;
+            }
+            .btn .text2 {
+                font-size: 20px;
+            }
+        }
+
         @media 
         (orientation: portrait) and (max-width: 400px),
         (orientation: landscape) and (max-height: 500px) {

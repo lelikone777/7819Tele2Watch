@@ -119,8 +119,8 @@
         .btn {
             position: relative;
             width: 95%;
-            /*height: 200px;*/
-            height: 31.25vmin;
+            /*height: 180px;*/
+            height: 29.3vmin;
             margin: 3px auto;
             display: flex;
             align-items: center;
@@ -144,9 +144,9 @@
         }
 
         .btn .wrap {
-            display: none;
             height: 100%;
             width: 25%;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -167,29 +167,29 @@
         .btn .text1 {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            /*align-items: flex-end;*/
+            margin-left: 10%;
             height: 100%;
             justify-content: center;
-            width: 80%;
-
-
             /*width: 496px;*/
             /*font-size: 80px;*/
+            width: 80%;
+            font-size: 12.5vmin;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-right: 19px;
+            border-right: 1px solid #FFFFFF;
+            flex: 1;
         }
 
-        .btn .text-title {
-            text-transform: uppercase;
-            font-size: 15.6vmin;
-            font-weight: 700;
+        .btn span {
+            margin-bottom: 14px;
         }
 
         .btn .text2 {
             /*font-size: 20px;*/
-            font-size: 3.1vmin;
+            font-size: 2.7vmin;
             font-weight: 400;
-            text-transform: uppercase;
-            padding: 4px 15px;
-            border: 1px solid #FFFFFF;
         }
 
 
@@ -215,6 +215,28 @@
         /*--------------
              Media
         --------------*/
+        @media
+        (min-height: 667px) and (min-width: 590px)
+        {
+            .btn {
+                max-height: 180px;
+            }
+            .btn::after {
+                max-height: 180px;
+            }
+            .btn .text1 {
+                width: auto;
+                font-size: 80px;
+            }
+            .btn .img {
+                height: 104px;
+                width: 104px;
+            }
+            .btn .text2 {
+                font-size: 20px;
+            }
+        }
+
         @media 
         (orientation: portrait) and (max-width: 400px),
         (orientation: landscape) and (max-height: 500px) {
@@ -239,7 +261,7 @@
         <a href="#" class="btn" onclick="document.getElementById('ButtonSubmit').click();">
             <div class="text">
                 <div class="text1">
-                    <span class="text-title">Смотреть</span>
+                    <span>Смотреть</span>
                     <span class="text2">Первые 3 дня бесплатно, далее 20 руб./сут.</span>
                 </div>
                 <div class="wrap">
